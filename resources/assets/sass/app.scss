@@ -1,0 +1,11 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.form {
+  &__main {
+    display: flex;
+    //justify-content: space-between;
+  }
+  &__item {
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAEA;EAEI,qBAAc;EAAd,cAAc,EAEf;;AAJH;EAMI,mBAAmB,EACpB","file":"app.css","sourcesContent":["// @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\n\n.form {\n  &__main {\n    display: flex;\n    //justify-content: space-between;\n  }\n  &__item {\n    margin-right: 15px;\n  }\n}"]}
