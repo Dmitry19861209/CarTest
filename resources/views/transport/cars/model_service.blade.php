@@ -14,9 +14,10 @@
     <ul>
         @if(!empty($services))
             @foreach($services as $key => $item)
-                <li>
-                    <span>{{ $item }}</span>
-                    <button class="delete_service" service_id="{{ $key }}">Удалить</button>
+                <li class="services__main">
+                    <span class="services__item">{{ $item->service_name }}</span>
+                    <span class="services__item">{{ $item->price }}</span>
+                    <button class="delete_service services__item" service_id="{{ $key }}">Удалить</button>
                 </li>
             @endforeach
         @else

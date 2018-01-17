@@ -3,7 +3,7 @@
 namespace App\Traits\Transport;
 
 
-trait CarTrait
+trait ModelTrait
 {
     protected $viewPath = 'transport.cars.';
     protected $routePath = 'car.';

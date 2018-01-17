@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', ['as' => 'main', 'uses' => 'TestController@index']);
+Route::get('/', ['as' => 'main', 'uses' => 'ModelController@index']);
 
 Route::group(['prefix' => 'cars'], function () {
-    Route::get('/', ['as' => 'car.all', 'uses' => 'TestController@showAllModels']);
-    Route::get('/{id}/model-service', ['as' => 'car.service', 'uses' => 'TestController@showModelServices']);//car/1/model-service
-    Route::post('/add-model-service', ['as' => 'car.service.add', 'uses' => 'TestController@addModelService']);
-    Route::post('/delete-model-service/{id}', ['as' => 'car.service.delete', 'uses' => 'TestController@deleteModelService']);
+    Route::get('/', ['as' => 'car.all', 'uses' => 'ModelController@index']);
+    Route::get('/{id}/model-service', ['as' => 'car.service', 'uses' => 'ModelController@showModelServices']);//car/1/model-service
+    Route::post('/add-model-service', ['as' => 'car.service.add', 'uses' => 'ModelController@addModelService']);
+    Route::post('/delete-model-service/{id}', ['as' => 'car.service.delete', 'uses' => 'ModelController@deleteModelService']);
 });

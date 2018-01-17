@@ -24,17 +24,12 @@ class CarModelRepository implements ModelsInterface
         return $this->car->all();
     }
 
-    public function getModelName($id)
-    {
-        return $this->getModelById($id)->name;
-    }
-
     public function getModelServices($id)
     {
         $services = $this->getModelById($id)->carModelService;
 
         foreach ($services as $service) {
-            $this->services[$service->service_id] = $service->service_name;
+            $this->services[$service->service_id] = $service;
         }
 
         return $this->services;

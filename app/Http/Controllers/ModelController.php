@@ -7,11 +7,11 @@ use App\Interfaces\Transport\ServiceModelInterface;
 use App\Interfaces\Transport\ModelsInterface;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\Traits\Transport\CarTrait;
+use App\Traits\Transport\ModelTrait;
 
-class TestController extends Controller
+class ModelController extends Controller
 {
-    use CarTrait;
+    use ModelTrait;
 
     protected $model;
     protected $service;
@@ -23,11 +23,6 @@ class TestController extends Controller
     }
 
     public function index()
-    {
-        return view('welcome');
-    }
-
-    public function showAllModels()
     {
         return view($this->viewPath . 'all_models',
                 [

@@ -5,7 +5,18 @@
     display: flex;
     //justify-content: space-between;
   }
+
   &__item {
     margin-right: 15px;
+  }
+}
+
+.services {
+  &__main {
+    padding: 5px 0;
+  }
+
+  &__item {
+    margin-right: 10px;
   }
 }

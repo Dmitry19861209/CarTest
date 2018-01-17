@@ -20,7 +20,14 @@ class ModelServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+//        \View::share('modelShare', [
+//            'route' => [
+//                'main' => 'car.'
+//            ],
+//            'view' => [
+//                'main' => 'transport.cars.'
+//            ]
+//        ]);
     }
 
     /**
