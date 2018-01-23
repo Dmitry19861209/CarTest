@@ -19,3 +19,8 @@ Route::group(['prefix' => 'cars'], function () {
     Route::post('/add-model-service', ['as' => 'car.service.add', 'uses' => 'ModelController@addModelService']);
     Route::post('/delete-model-service/{id}', ['as' => 'car.service.delete', 'uses' => 'ModelController@deleteModelService']);
 });
+
+Route::group(['prefix' => 'test'], function () {
+    Route::get('/', ['as' => 'test.main', 'uses' => 'TestController@index']);
+    Route::get('/list', ['as' => 'test.list', 'uses' => 'TestController@recListTest']);
+});

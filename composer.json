@@ -22,7 +22,12 @@
         ],
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "app/debug-helpers.php",
+            "app/helpers.php",
+            "app/Helpers/RecList/companionFunc.php"
+        ]
     },
     "autoload-dev": {
         "classmap": [

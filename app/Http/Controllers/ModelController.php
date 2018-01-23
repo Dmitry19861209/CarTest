@@ -35,6 +35,8 @@ class ModelController extends Controller
     {
         $services = $this->model->getModelServices($id);
 
+        log_request('services', $services);
+
         return view($this->viewPath . 'model_service',
             [
                 'services' => $services,
